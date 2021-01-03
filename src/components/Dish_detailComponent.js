@@ -6,27 +6,29 @@ const DishDetail = ({dish}) => {
         const dish_comments = dish.comments.map((com) => {
             return(
                 <div key={com.id} className="mb-3">
-                        <CardText className="mb-1">{com.comment}</CardText>
-                        <CardText>--{com.author},{com.date}</CardText>
+                        <p><CardText className="mb-2">{com.comment}</CardText>
+                        <CardText>--{com.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(com.date)))}</CardText></p>
                 </div>
             );
         });
         return(
-            <div className="row">
-                <div className="col-12 col-md-5 m-1">
-                    <Card>
-                        <CardImg top src={dish.image} alt={dish.name} />
-                        <CardBody>
-                            <CardTitle>{dish.name}</CardTitle>
-                            <CardText>{dish.description}</CardText>
-                        </CardBody>
-                    </Card>
-                </div>
-                <div className="col-12 col-md-6 m-1">
-                    <Card>
+            <div className= "container">
+                <div className="row">
+                    <div className="col-12 col-md-5 m-1">
+                        <Card>
+                            <CardImg top src={dish.image} alt={dish.name} />
+                            <CardBody>
+                                <CardTitle>{dish.name}</CardTitle>
+                                <CardText>{dish.description}</CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-12 col-md-5 m-1">
+                        
                         <CardTitle>Comments</CardTitle>
                         {dish_comments}
-                    </Card>
+                        
+                    </div>
                 </div>
             </div>
         );
