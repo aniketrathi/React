@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
-function Rendermenu({dish,onClick}) {
+function Rendermenu({dish}) {
     return(
         <Link to={`/menu/${dish.id}`}>
             <Card>
@@ -20,7 +20,7 @@ function Menu(props) {
     const menu = props.dishes.map((dish) => {
         return (
             <div key={dish.id} className="col-12 col-md-5 m-1 ">
-                <Rendermenu dish={dish} onClick={props.onClick} />
+                <Rendermenu dish={dish}/>
             </div>
         );
     });
