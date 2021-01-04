@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-
-const DishDetail = ({dish}) => {
-    if (dish != null){
-        const dish_comments = dish.comments.map((com) => {
+import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
+const DishDetail = (props) => {
+    if (props.dish != null){
+        const dish_comments = props.comments.map((com) => {
             return(
                 <div key={com.id} className="mb-3">
                         <p><CardText className="mb-2">{com.comment}</CardText>
@@ -14,12 +14,22 @@ const DishDetail = ({dish}) => {
         return(
             <div className= "container">
                 <div className="row">
+                    <Breadcrumb>
+                        <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
+                    </Breadcrumb>
+                    <div className="col-12">
+                        <h3>{props.dish.name}</h3>
+                        <hr />
+                    </div>                
+                </div>
+                <div className="row">
                     <div className="col-12 col-md-5 m-1">
                         <Card>
-                            <CardImg top src={dish.image} alt={dish.name} />
+                            <CardImg top src={props.dish.image} alt={props.dish.name} />
                             <CardBody>
-                                <CardTitle>{dish.name}</CardTitle>
-                                <CardText>{dish.description}</CardText>
+                                <CardTitle>{props.dish.name}</CardTitle>
+                                <CardText>{props.dish.description}</CardText>
                             </CardBody>
                         </Card>
                     </div>
@@ -34,10 +44,11 @@ const DishDetail = ({dish}) => {
         );
     }
     
-else
+else{
     return(
         <div></div>
     );
+}
 }
 
 export default DishDetail;
