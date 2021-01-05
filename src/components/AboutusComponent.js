@@ -9,7 +9,7 @@ function About(props) {
                 <div className="col-12 mt-5">
                   <Media tag="li">
                     <Media left middle>
-                        <Media object src={leader.image} alt={leader.name} />
+                        <Media object src={`/React${leader.image}`} alt={leader.name} />
                     </Media>
                     <Media body className="ml-5">
                       <Media heading>{leader.name}</Media>
