@@ -1,5 +1,5 @@
 {
-  "Homepage": "http://aniketrathi.github.io/restroapp",
+  "homepage": "http://aniketrathi.github.io/restroapp",
   "name": "restroapp",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "bootstrap": "^4.5.3",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
+    "google-maps-react": "^2.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-popper": "^0.9.2",
