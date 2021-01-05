@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/React/static/css/main.aba4c3e3.chunk.css",
-    "main.js": "/React/static/js/main.07a03721.chunk.js",
-    "main.js.map": "/React/static/js/main.07a03721.chunk.js.map",
-    "runtime-main.js": "/React/static/js/runtime-main.39cd5821.js",
-    "runtime-main.js.map": "/React/static/js/runtime-main.39cd5821.js.map",
+    "main.js": "/React/static/js/main.5012aa40.chunk.js",
+    "main.js.map": "/React/static/js/main.5012aa40.chunk.js.map",
+    "runtime-main.js": "/React/static/js/runtime-main.9d84b140.js",
+    "runtime-main.js.map": "/React/static/js/runtime-main.9d84b140.js.map",
     "static/css/2.50ced650.chunk.css": "/React/static/css/2.50ced650.chunk.css",
     "static/js/2.3b0bca4f.chunk.js": "/React/static/js/2.3b0bca4f.chunk.js",
     "static/js/2.3b0bca4f.chunk.js.map": "/React/static/js/2.3b0bca4f.chunk.js.map",
-    "static/js/3.f527091e.chunk.js": "/React/static/js/3.f527091e.chunk.js",
-    "static/js/3.f527091e.chunk.js.map": "/React/static/js/3.f527091e.chunk.js.map",
+    "static/js/3.ac51196e.chunk.js": "/React/static/js/3.ac51196e.chunk.js",
+    "static/js/3.ac51196e.chunk.js.map": "/React/static/js/3.ac51196e.chunk.js.map",
     "index.html": "/React/index.html",
     "static/css/2.50ced650.chunk.css.map": "/React/static/css/2.50ced650.chunk.css.map",
     "static/css/main.aba4c3e3.chunk.css.map": "/React/static/css/main.aba4c3e3.chunk.css.map",
@@ -17,10 +17,10 @@
     "static/media/font-awesome.css": "/React/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.39cd5821.js",
+    "static/js/runtime-main.9d84b140.js",
     "static/css/2.50ced650.chunk.css",
     "static/js/2.3b0bca4f.chunk.js",
     "static/css/main.aba4c3e3.chunk.css",
-    "static/js/main.07a03721.chunk.js"
+    "static/js/main.5012aa40.chunk.js"
   ]
 }
