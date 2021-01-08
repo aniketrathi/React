@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Breadcrumb, BreadcrumbItem, Form, FormGroup, Input, Button, Label, Col,FormFeedback} from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 
 class Contact extends Component {
@@ -107,12 +106,6 @@ class Contact extends Component {
                                 <i className="fa fa-fax"></i>: +852 8765 4321<br />
                                 <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
                             </address>
-                    </div>
-                    <div className="col-12 col-sm-6 offset-sm-1">
-                        <h5>Map of our Location</h5>
-                    <col md={9}>
-                        
-                    </col>
                     </div>
                     <div className="col-12 col-sm-11 offset-sm-1">
                         <div className="btn-group" role="group">
